@@ -1,4 +1,0 @@
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = 'C:\Users\Rush\Documents\workspace\zhihu\zhihu-master\index.js'
-document.head.appendChild(script);

@@ -2,7 +2,11 @@
   "name": "MyTaskListad",  
   "version": "0.9.0",  
   "manifest_version": 2,
-  "description": "Management my everyday's task lists.",  
+  "description": "Management my everyday's task lists.", 
+  "permissions": ["http://localhost/*"], 
+  "web_accessible_resources":[
+    "api/"
+  ],
   "browser_action": {  
     "default_icon": "small.gif" ,
     "default_title": "My Task List",
@@ -11,6 +15,6 @@
   "content_scripts":[
   {
   	"matches": ["http://*.zhihu.com/*"],
-  	"js": ["contentscript.js"]
+  	"js": ["contentscript.js", "zhihu.js"]
   	}]
 } 
