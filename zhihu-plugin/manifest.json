@@ -1,0 +1,16 @@
+{  
+  "name": "MyTaskListad",  
+  "version": "0.9.0",  
+  "manifest_version": 2,
+  "description": "Management my everyday's task lists.",  
+  "browser_action": {  
+    "default_icon": "small.gif" ,
+    "default_title": "My Task List",
+    "default_popup": "popup.html"
+  },
+  "content_scripts":[
+  {
+  	"matches": ["http://*.zhihu.com/*"],
+  	"js": ["contentscript.js"]
+  	}]
+} 
